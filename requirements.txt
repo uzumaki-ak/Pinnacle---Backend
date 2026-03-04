@@ -1,0 +1,79 @@
+# FastAPI & Server
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+
+# Database & Vector Store
+supabase==2.3.4
+psycopg2-binary==2.9.9
+pgvector==0.2.5
+sqlalchemy==2.0.27
+
+# Redis Queue
+redis==5.0.1
+rq==1.16.1
+
+# HTTP & Async
+httpx==0.25.2
+aiohttp==3.9.3
+requests==2.31.0
+
+# LLM APIs
+openai==1.12.0
+google-generativeai==0.3.2
+anthropic==0.18.1
+
+# Embeddings & ML
+sentence-transformers==2.4.0
+torch==2.2.0
+transformers==4.37.2
+numpy==1.26.4
+scikit-learn==1.4.0
+
+# Content Extraction
+trafilatura==1.6.4
+newspaper3k==0.2.8
+beautifulsoup4==4.12.3
+html2text==2024.2.26
+readability-lxml==0.8.1
+
+# Media Processing
+pytube==15.0.0
+yt-dlp==2024.3.10
+youtube-transcript-api==0.6.1
+Pillow==10.2.0
+opencv-python==4.9.0.80
+
+# Transcription (optional - remove if build fails)
+# openai-whisper==20231117
+# faster-whisper==0.10.0
+
+# OCR
+pytesseract==0.3.10
+easyocr==1.7.1
+
+# Utils
+pydantic==2.6.1
+pydantic-settings==2.1.0
+email-validator==2.1.0
+validators==0.22.0
+python-magic==0.4.27
+filetype==1.2.0
+urllib3==2.2.0
+
+# Monitoring & Logging
+loguru==0.7.2
+prometheus-client==0.19.0
+sentry-sdk[fastapi]==1.40.0
+
+# Security
+cryptography==42.0.2
+bcrypt==4.1.2
+
+# Testing
+pytest==7.0.0
+pytest-asyncio==0.23.4
+httpx-sse==0.4.0
