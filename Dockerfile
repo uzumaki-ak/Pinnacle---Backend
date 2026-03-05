@@ -6,6 +6,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     ffmpeg \
+    libmagic1 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements
@@ -16,6 +19,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
+
+# Create and switch to non-root user for security
+RUN adduser --disabled-password --gecos '' appuser
+USER appuser
 
 # Expose port
 EXPOSE 8000
