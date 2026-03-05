@@ -64,7 +64,9 @@ class Settings(BaseSettings):
     CORS_ORIGINS: List[str] = [
         "http://localhost:3000",
         "http://localhost:5173",
-        "chrome-extension://*"
+        "chrome-extension://*",
+        "https://pinnacle-eight-flax.vercel.app",
+        "https://*.vercel.app"
     ]
     
     # Rate Limiting
