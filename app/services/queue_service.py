@@ -17,7 +17,8 @@ class QueueService:
             self.redis_client = redis.from_url(
                 settings.REDIS_URL,
                 encoding="utf-8",
-                decode_responses=True
+                decode_responses=True,
+                ssl_cert_reqs=None  # Required for Upstash TLS
             )
             await self.redis_client.ping()
             logger.success("✅ Connected to Redis")
